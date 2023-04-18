@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "hockey3.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

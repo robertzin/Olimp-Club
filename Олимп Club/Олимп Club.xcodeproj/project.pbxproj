@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4702CA8529B733B2005BEB6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702CA8429B733B2005BEB6E /* AppDelegate.swift */; };
+		4702CA8729B733B2005BEB6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702CA8629B733B2005BEB6E /* SceneDelegate.swift */; };
+		4702CA8E29B733B4005BEB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4702CA8D29B733B4005BEB6E /* Assets.xcassets */; };
+		4702CA9129B733B4005BEB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4702CA8F29B733B4005BEB6E /* LaunchScreen.storyboard */; };
+		4702CAA529B73FC3005BEB6E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAA429B73FC3005BEB6E /* Constants.swift */; };
+		4702CAAE29B746E4005BEB6E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4702CAAB29B746E4005BEB6E /* SF-Pro-Display-Bold.otf */; };
+		4702CAAF29B746E4005BEB6E /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4702CAAC29B746E4005BEB6E /* SF-Pro-Display-Regular.otf */; };
+		4702CAB029B746E4005BEB6E /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4702CAAD29B746E4005BEB6E /* SF-Pro-Display-Semibold.otf */; };
+		4702CAB729B74C2A005BEB6E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAB629B74C2A005BEB6E /* UIView+Extension.swift */; };
+		4702CAB929B74C3A005BEB6E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAB829B74C3A005BEB6E /* UIViewController+Extension.swift */; };
+		4702CABB29B74C4A005BEB6E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702CABA29B74C4A005BEB6E /* UITextField+Extension.swift */; };
+		4702CAC729B76B60005BEB6E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAC529B76B60005BEB6E /* MapViewController.swift */; };
+		4714A4BC29C2446600696DD0 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714A4BB29C2446600696DD0 /* Double+Extension.swift */; };
+		4714A4BF29C8856700696DD0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714A4BE29C8856700696DD0 /* DetailsViewController.swift */; };
+		4714A4C129C8856E00696DD0 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714A4C029C8856E00696DD0 /* Details.storyboard */; };
+		4765914929BF609A00DB0848 /* InfoViewButtonsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765914829BF609A00DB0848 /* InfoViewButtonsDelegate.swift */; };
+		4765914D29C053BD00DB0848 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765914C29C053BD00DB0848 /* InitViewController.swift */; };
+		4765914F29C053D500DB0848 /* Init.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4765914E29C053D500DB0848 /* Init.storyboard */; };
+		4765915129C055A900DB0848 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4765915029C055A900DB0848 /* Onboarding.storyboard */; };
+		4765915329C058BC00DB0848 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765915229C058BC00DB0848 /* OnboardingViewController.swift */; };
+		476794AD29C06EF6007B2EA6 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476794AC29C06EF5007B2EA6 /* Map.storyboard */; };
+		4777CF0229B9E796005704CE /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4777CF0129B9E796005704CE /* IQKeyboardManagerSwift */; };
+		4780406129B862F100451643 /* SportCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780406029B862F100451643 /* SportCenter.swift */; };
+		4780406329B8643B00451643 /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780406229B8643B00451643 /* MapLocation.swift */; };
+		4780406529B8648C00451643 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780406429B8648C00451643 /* MKMapView+Extension.swift */; };
+		4780406729B8721C00451643 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780406629B8721C00451643 /* InfoView.xib */; };
+		4780406929B886F900451643 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780406829B886F900451643 /* InfoView.swift */; };
+		47BF8B6C29C8A1E30003CEE4 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BF8B6B29C8A1E30003CEE4 /* BookingViewController.swift */; };
+		47BF8B6E29C8A1EB0003CEE4 /* Booking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BF8B6D29C8A1EB0003CEE4 /* Booking.storyboard */; };
+		47F541B529C9975900CA924C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F541B429C9975900CA924C /* Alert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4702CA8129B733B2005BEB6E /* Олимп Club.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Олимп Club.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4702CA8429B733B2005BEB6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4702CA8629B733B2005BEB6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4702CA8D29B733B4005BEB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4702CA9029B733B4005BEB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4702CA9229B733B4005BEB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4702CAA429B73FC3005BEB6E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4702CAAB29B746E4005BEB6E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		4702CAAC29B746E4005BEB6E /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		4702CAAD29B746E4005BEB6E /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		4702CAB629B74C2A005BEB6E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4702CAB829B74C3A005BEB6E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4702CABA29B74C4A005BEB6E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		4702CAC529B76B60005BEB6E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4714A4BB29C2446600696DD0 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		4714A4BE29C8856700696DD0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4714A4C029C8856E00696DD0 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		4765914829BF609A00DB0848 /* InfoViewButtonsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewButtonsDelegate.swift; sourceTree = "<group>"; };
+		4765914C29C053BD00DB0848 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		4765914E29C053D500DB0848 /* Init.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Init.storyboard; sourceTree = "<group>"; };
+		4765915029C055A900DB0848 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		4765915229C058BC00DB0848 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		476794AC29C06EF5007B2EA6 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		4780406029B862F100451643 /* SportCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCenter.swift; sourceTree = "<group>"; };
+		4780406229B8643B00451643 /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
+		4780406429B8648C00451643 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
+		4780406629B8721C00451643 /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		4780406829B886F900451643 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		47BF8B6B29C8A1E30003CEE4 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		47BF8B6D29C8A1EB0003CEE4 /* Booking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Booking.storyboard; sourceTree = "<group>"; };
+		47F541B429C9975900CA924C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4702CA7E29B733B2005BEB6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4777CF0229B9E796005704CE /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4702CA7829B733B2005BEB6E = {
+			isa = PBXGroup;
+			children = (
+				4702CA8329B733B2005BEB6E /* Олимп Club */,
+				4702CA8229B733B2005BEB6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4702CA8229B733B2005BEB6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4702CA8129B733B2005BEB6E /* Олимп Club.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4702CA8329B733B2005BEB6E /* Олимп Club */ = {
+			isa = PBXGroup;
+			children = (
+				47F541B329C9974B00CA924C /* Helpers */,
+				4765914729BF608600DB0848 /* Protocols */,
+				4765914629BF607300DB0848 /* Enums */,
+				4780405F29B8627000451643 /* Models */,
+				4702CAB529B74C19005BEB6E /* Extensions */,
+				4702CA9929B73A3C005BEB6E /* Resources */,
+				4702CA9829B73A32005BEB6E /* Controllers */,
+				4702CA8429B733B2005BEB6E /* AppDelegate.swift */,
+				4702CA8629B733B2005BEB6E /* SceneDelegate.swift */,
+				4702CA8D29B733B4005BEB6E /* Assets.xcassets */,
+				4702CA8F29B733B4005BEB6E /* LaunchScreen.storyboard */,
+				4702CA9229B733B4005BEB6E /* Info.plist */,
+			);
+			path = "Олимп Club";
+			sourceTree = "<group>";
+		};
+		4702CA9829B73A32005BEB6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47BF8B6A29C8A1CB0003CEE4 /* Booking */,
+				4714A4BD29C8846400696DD0 /* DetailsView */,
+				476794AB29C06EDA007B2EA6 /* InfoView */,
+				4702CABC29B74C62005BEB6E /* Map */,
+				4702CA9F29B73D0D005BEB6E /* Onboarding */,
+				4702CA9A29B73A52005BEB6E /* Loading */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4702CA9929B73A3C005BEB6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4702CAAA29B746D8005BEB6E /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4702CA9A29B73A52005BEB6E /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				4765914C29C053BD00DB0848 /* InitViewController.swift */,
+				4765914E29C053D500DB0848 /* Init.storyboard */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		4702CA9F29B73D0D005BEB6E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4765915229C058BC00DB0848 /* OnboardingViewController.swift */,
+				4765915029C055A900DB0848 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4702CAAA29B746D8005BEB6E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4702CAAB29B746E4005BEB6E /* SF-Pro-Display-Bold.otf */,
+				4702CAAC29B746E4005BEB6E /* SF-Pro-Display-Regular.otf */,
+				4702CAAD29B746E4005BEB6E /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4702CAB529B74C19005BEB6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4702CAB629B74C2A005BEB6E /* UIView+Extension.swift */,
+				4702CAB829B74C3A005BEB6E /* UIViewController+Extension.swift */,
+				4702CABA29B74C4A005BEB6E /* UITextField+Extension.swift */,
+				4780406429B8648C00451643 /* MKMapView+Extension.swift */,
+				4714A4BB29C2446600696DD0 /* Double+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4702CABC29B74C62005BEB6E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4702CAC529B76B60005BEB6E /* MapViewController.swift */,
+				476794AC29C06EF5007B2EA6 /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		4714A4BD29C8846400696DD0 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				4714A4BE29C8856700696DD0 /* DetailsViewController.swift */,
+				4714A4C029C8856E00696DD0 /* Details.storyboard */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		4765914629BF607300DB0848 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4702CAA429B73FC3005BEB6E /* Constants.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4765914729BF608600DB0848 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4765914829BF609A00DB0848 /* InfoViewButtonsDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		476794AB29C06EDA007B2EA6 /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				4780406829B886F900451643 /* InfoView.swift */,
+				4780406629B8721C00451643 /* InfoView.xib */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		4780405F29B8627000451643 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4780406029B862F100451643 /* SportCenter.swift */,
+				4780406229B8643B00451643 /* MapLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47BF8B6A29C8A1CB0003CEE4 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				47BF8B6B29C8A1E30003CEE4 /* BookingViewController.swift */,
+				47BF8B6D29C8A1EB0003CEE4 /* Booking.storyboard */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		47F541B329C9974B00CA924C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				47F541B429C9975900CA924C /* Alert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4702CA8029B733B2005BEB6E /* Олимп Club */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4702CA9529B733B4005BEB6E /* Build configuration list for PBXNativeTarget "Олимп Club" */;
+			buildPhases = (
+				4702CA7D29B733B2005BEB6E /* Sources */,
+				4702CA7E29B733B2005BEB6E /* Frameworks */,
+				4702CA7F29B733B2005BEB6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Олимп Club";
+			packageProductDependencies = (
+				4777CF0129B9E796005704CE /* IQKeyboardManagerSwift */,
+			);
+			productName = SportLocator;
+			productReference = 4702CA8129B733B2005BEB6E /* Олимп Club.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4702CA7929B733B2005BEB6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4702CA8029B733B2005BEB6E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4702CA7C29B733B2005BEB6E /* Build configuration list for PBXProject "Олимп Club" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4702CA7829B733B2005BEB6E;
+			packageReferences = (
+				4777CF0029B9E796005704CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 4702CA8229B733B2005BEB6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4702CA8029B733B2005BEB6E /* Олимп Club */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4702CA7F29B733B2005BEB6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4702CA9129B733B4005BEB6E /* LaunchScreen.storyboard in Resources */,
+				4765915129C055A900DB0848 /* Onboarding.storyboard in Resources */,
+				4702CAAE29B746E4005BEB6E /* SF-Pro-Display-Bold.otf in Resources */,
+				4702CA8E29B733B4005BEB6E /* Assets.xcassets in Resources */,
+				4780406729B8721C00451643 /* InfoView.xib in Resources */,
+				4714A4C129C8856E00696DD0 /* Details.storyboard in Resources */,
+				4702CAB029B746E4005BEB6E /* SF-Pro-Display-Semibold.otf in Resources */,
+				476794AD29C06EF6007B2EA6 /* Map.storyboard in Resources */,
+				4765914F29C053D500DB0848 /* Init.storyboard in Resources */,
+				4702CAAF29B746E4005BEB6E /* SF-Pro-Display-Regular.otf in Resources */,
+				47BF8B6E29C8A1EB0003CEE4 /* Booking.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4702CA7D29B733B2005BEB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F541B529C9975900CA924C /* Alert.swift in Sources */,
+				4702CABB29B74C4A005BEB6E /* UITextField+Extension.swift in Sources */,
+				4702CAB929B74C3A005BEB6E /* UIViewController+Extension.swift in Sources */,
+				4765914D29C053BD00DB0848 /* InitViewController.swift in Sources */,
+				4702CAA529B73FC3005BEB6E /* Constants.swift in Sources */,
+				4702CAB729B74C2A005BEB6E /* UIView+Extension.swift in Sources */,
+				4702CAC729B76B60005BEB6E /* MapViewController.swift in Sources */,
+				4780406929B886F900451643 /* InfoView.swift in Sources */,
+				4780406529B8648C00451643 /* MKMapView+Extension.swift in Sources */,
+				4714A4BC29C2446600696DD0 /* Double+Extension.swift in Sources */,
+				4780406329B8643B00451643 /* MapLocation.swift in Sources */,
+				4765914929BF609A00DB0848 /* InfoViewButtonsDelegate.swift in Sources */,
+				47BF8B6C29C8A1E30003CEE4 /* BookingViewController.swift in Sources */,
+				4714A4BF29C8856700696DD0 /* DetailsViewController.swift in Sources */,
+				4780406129B862F100451643 /* SportCenter.swift in Sources */,
+				4765915329C058BC00DB0848 /* OnboardingViewController.swift in Sources */,
+				4702CA8529B733B2005BEB6E /* AppDelegate.swift in Sources */,
+				4702CA8729B733B2005BEB6E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4702CA8F29B733B4005BEB6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4702CA9029B733B4005BEB6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4702CA9329B733B4005BEB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4702CA9429B733B4005BEB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4702CA9629B733B4005BEB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Олимп club/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Init;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sports.Олимп Club";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4702CA9729B733B4005BEB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Олимп club/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Init;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sports.Олимп Club";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4702CA7C29B733B2005BEB6E /* Build configuration list for PBXProject "Олимп Club" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702CA9329B733B4005BEB6E /* Debug */,
+				4702CA9429B733B4005BEB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4702CA9529B733B4005BEB6E /* Build configuration list for PBXNativeTarget "Олимп Club" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702CA9629B733B4005BEB6E /* Debug */,
+				4702CA9729B733B4005BEB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4777CF0029B9E796005704CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4777CF0129B9E796005704CE /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4777CF0029B9E796005704CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4702CA7929B733B2005BEB6E /* Project object */;
+}

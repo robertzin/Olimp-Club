@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Onboarding" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="Олимп_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboardingImage" translatesAutoresizingMaskIntoConstraints="NO" id="l9K-jd-9u1">
+                                <rect key="frame" x="17" y="60" width="376" height="558"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l9K-jd-9u1" secondAttribute="height" multiplier="188:279" id="pPu-dW-7CI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1w-rq-7bF">
+                                <rect key="frame" x="15" y="624" width="363" height="79"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67M-WV-kgs">
+                                <rect key="frame" x="15" y="743" width="363" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="67M-WV-kgs" secondAttribute="height" multiplier="121:16" id="In8-F7-gd3"/>
+                                </constraints>
+                                <color key="tintColor" name="buttonColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Продолжить">
+                                    <fontDescription key="titleFontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Rnd-qC-xkA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="bgColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="l9K-jd-9u1" secondAttribute="bottom" constant="200" id="48M-QB-kAP"/>
+                            <constraint firstItem="l9K-jd-9u1" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" priority="999" constant="60" id="7ta-e4-qaS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="67M-WV-kgs" secondAttribute="bottom" constant="27" id="HMT-dQ-p11"/>
+                            <constraint firstItem="l9K-jd-9u1" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" priority="999" id="LOq-Fa-DPL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V1w-rq-7bF" secondAttribute="trailing" constant="15" id="SHN-rt-mER"/>
+                            <constraint firstItem="67M-WV-kgs" firstAttribute="top" secondItem="V1w-rq-7bF" secondAttribute="bottom" constant="40" id="cAd-cw-ldZ"/>
+                            <constraint firstItem="V1w-rq-7bF" firstAttribute="top" secondItem="l9K-jd-9u1" secondAttribute="bottom" priority="999" constant="6" id="eD1-Jh-302"/>
+                            <constraint firstItem="V1w-rq-7bF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="hSU-fJ-8gv"/>
+                            <constraint firstItem="l9K-jd-9u1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="lgl-w1-p9M"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="67M-WV-kgs" secondAttribute="trailing" constant="15" id="nRn-Li-qYV"/>
+                            <constraint firstItem="67M-WV-kgs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="vRn-Mb-FFc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="67M-WV-kgs" id="zNz-iy-OLP"/>
+                        <outlet property="titleLabel" destination="V1w-rq-7bF" id="Dkd-td-eG7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboardingImage" width="358" height="558"/>
+        <namedColor name="bgColor">
+            <color red="0.29019607843137257" green="0.59607843137254901" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonColor">
+            <color red="0.15294117647058825" green="0.61176470588235299" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

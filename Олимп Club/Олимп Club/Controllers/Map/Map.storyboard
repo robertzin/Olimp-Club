@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="Y6W-OH-hqX" customClass="MapViewController" customModule="Олимп_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76E-43-FyW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Поиск" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="PTY-OA-Inb">
+                                <rect key="frame" x="15" y="59" width="363" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rOx-MK-2h7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87b-bu-AyO">
+                                <rect key="frame" x="0.0" y="109" width="430" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-vL-kbq">
+                                        <rect key="frame" x="15" y="0.0" width="400" height="30"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D0z-vL-kbq" secondAttribute="trailing" constant="15" id="HfC-DW-BEM"/>
+                                    <constraint firstAttribute="bottom" secondItem="D0z-vL-kbq" secondAttribute="bottom" id="LDX-yY-kZc"/>
+                                    <constraint firstItem="D0z-vL-kbq" firstAttribute="height" secondItem="87b-bu-AyO" secondAttribute="height" id="ehk-Cy-5HH"/>
+                                    <constraint firstAttribute="height" constant="30" id="hRW-C0-cg0"/>
+                                    <constraint firstItem="D0z-vL-kbq" firstAttribute="top" secondItem="87b-bu-AyO" secondAttribute="top" id="s2D-Cb-mWE"/>
+                                    <constraint firstItem="D0z-vL-kbq" firstAttribute="leading" secondItem="87b-bu-AyO" secondAttribute="leading" constant="15" id="yKs-Oy-ogW"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQa-3y-wY2">
+                                <rect key="frame" x="318" y="758" width="75" height="60"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="currentLocation" title=" "/>
+                                <connections>
+                                    <action selector="currentLocationButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Sq1-8L-vkS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="87b-bu-AyO" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="28E-4J-USl"/>
+                            <constraint firstItem="YQa-3y-wY2" firstAttribute="top" secondItem="76E-43-FyW" secondAttribute="bottom" constant="-94" id="2xU-o5-dUS"/>
+                            <constraint firstItem="PTY-OA-Inb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4D4-Qt-vt4"/>
+                            <constraint firstItem="87b-bu-AyO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ACM-On-yhH"/>
+                            <constraint firstItem="76E-43-FyW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Fcn-66-uNS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="87b-bu-AyO" secondAttribute="trailing" id="LfY-0H-qsY"/>
+                            <constraint firstItem="YQa-3y-wY2" firstAttribute="leading" secondItem="76E-43-FyW" secondAttribute="trailing" constant="-75" id="N0M-mG-W3E"/>
+                            <constraint firstItem="87b-bu-AyO" firstAttribute="top" secondItem="PTY-OA-Inb" secondAttribute="bottom" constant="10" id="UtT-Vb-NWc"/>
+                            <constraint firstItem="76E-43-FyW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="dsw-sL-2Ve"/>
+                            <constraint firstItem="PTY-OA-Inb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="e26-cB-ke4"/>
+                            <constraint firstItem="PTY-OA-Inb" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="gr9-V3-hEV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PTY-OA-Inb" secondAttribute="trailing" constant="15" id="sPM-zy-oTK"/>
+                            <constraint firstItem="76E-43-FyW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="spX-bc-30x"/>
+                            <constraint firstAttribute="bottom" secondItem="76E-43-FyW" secondAttribute="bottom" id="wNG-qe-PuE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentLocationButton" destination="YQa-3y-wY2" id="nrR-Ro-FHr"/>
+                        <outlet property="currentLocationButtonYConstraint" destination="2xU-o5-dUS" id="rCL-FT-bGw"/>
+                        <outlet property="filterButtonsStackView" destination="D0z-vL-kbq" id="lgt-kU-ppq"/>
+                        <outlet property="filterTextField" destination="PTY-OA-Inb" id="rej-EO-ACF"/>
+                        <outlet property="mapView" destination="76E-43-FyW" id="QOg-Dm-pGG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.46511627906976" y="3.218884120171674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="currentLocation" width="46" height="46"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

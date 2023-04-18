@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ikm-bb-0Ew">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3gM-8b-kkp">
+            <objects>
+                <navigationController id="Ikm-bb-0Ew" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IsY-h6-6I9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="632-VI-ZP8" kind="relationship" relationship="rootViewController" id="ZZj-gF-U1c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWG-ap-l1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="49"/>
+        </scene>
+        <!--Init View Controller-->
+        <scene sceneID="Ksg-h8-Aoa">
+            <objects>
+                <viewController id="632-VI-ZP8" customClass="InitViewController" customModule="Олимп_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xIq-8E-0gO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="WUK-GT-pue">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C5E-3f-uDg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C5E-3f-uDg" firstAttribute="trailing" secondItem="WUK-GT-pue" secondAttribute="trailing" id="1oK-ZI-FvA"/>
+                            <constraint firstItem="WUK-GT-pue" firstAttribute="leading" secondItem="C5E-3f-uDg" secondAttribute="leading" id="2Fx-xc-c7I"/>
+                            <constraint firstItem="C5E-3f-uDg" firstAttribute="top" secondItem="WUK-GT-pue" secondAttribute="top" constant="103" id="LdX-4u-b0F"/>
+                            <constraint firstItem="WUK-GT-pue" firstAttribute="bottom" secondItem="C5E-3f-uDg" secondAttribute="bottom" constant="34" id="Snh-of-L73"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nuY-BK-XKs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbb-cr-cMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472.51908396946561" y="48.591549295774648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loadingImage" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

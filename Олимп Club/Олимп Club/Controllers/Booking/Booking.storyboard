@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Booking View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BookingVC" id="Y6W-OH-hqX" customClass="BookingViewController" customModule="Олимп_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бронирование" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd3-LS-2Pa">
+                                <rect key="frame" x="138" y="92" width="117" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-dW-VeN">
+                                <rect key="frame" x="15" y="156" width="363" height="50"/>
+                                <color key="backgroundColor" name="textFiledBgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="crr-gv-Q2s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75t-2h-5PK">
+                                <rect key="frame" x="15" y="220" width="363" height="50"/>
+                                <color key="backgroundColor" name="textFiledBgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="00L-g2-flI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWG-8s-eQn">
+                                <rect key="frame" x="15" y="284" width="363" height="50"/>
+                                <color key="backgroundColor" name="textFiledBgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HJN-aW-boo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-lb-dWf">
+                                <rect key="frame" x="15" y="364" width="363" height="50"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g5z-NU-uSs"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Забронировать">
+                                    <fontDescription key="titleFontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bookingButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VgZ-Wy-uv4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p02-ji-BVh">
+                                <rect key="frame" x="4" y="80" width="59" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backMark" title=" "/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LAb-F4-5qa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p02-ji-BVh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="21" id="EbZ-1r-FiK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XsH-lb-dWf" secondAttribute="trailing" constant="15" id="Ee0-BZ-Orb"/>
+                            <constraint firstItem="AWG-8s-eQn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="J6v-qj-WyG"/>
+                            <constraint firstItem="XsH-lb-dWf" firstAttribute="top" secondItem="AWG-8s-eQn" secondAttribute="bottom" constant="30" id="MOt-w4-Ixi"/>
+                            <constraint firstItem="75t-2h-5PK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="NQf-XT-hDv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AWG-8s-eQn" secondAttribute="trailing" constant="15" id="RvX-bK-whg"/>
+                            <constraint firstItem="AWG-8s-eQn" firstAttribute="top" secondItem="75t-2h-5PK" secondAttribute="bottom" constant="14" id="TQv-29-Fg7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="75t-2h-5PK" secondAttribute="trailing" constant="15" id="WeJ-58-uJA"/>
+                            <constraint firstItem="XsH-lb-dWf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="bV6-5Y-4BI"/>
+                            <constraint firstItem="zd3-LS-2Pa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="33" id="fNb-Dg-0vI"/>
+                            <constraint firstItem="fT3-dW-VeN" firstAttribute="top" secondItem="zd3-LS-2Pa" secondAttribute="bottom" constant="43" id="ihn-lt-jmf"/>
+                            <constraint firstItem="zd3-LS-2Pa" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="jqM-lQ-3GR"/>
+                            <constraint firstItem="zd3-LS-2Pa" firstAttribute="leading" secondItem="p02-ji-BVh" secondAttribute="trailing" constant="75" id="mvD-35-OL1"/>
+                            <constraint firstItem="fT3-dW-VeN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="nkf-se-qdj"/>
+                            <constraint firstItem="75t-2h-5PK" firstAttribute="top" secondItem="fT3-dW-VeN" secondAttribute="bottom" constant="14" id="u0i-Eh-1R9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fT3-dW-VeN" secondAttribute="trailing" constant="15" id="ypU-dV-Y1F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="p02-ji-BVh" id="cHK-z5-WUE"/>
+                        <outlet property="bookingButton" destination="XsH-lb-dWf" id="1WG-oL-MiA"/>
+                        <outlet property="emailTextField" destination="AWG-8s-eQn" id="WH7-eh-21G"/>
+                        <outlet property="nameTextField" destination="fT3-dW-VeN" id="ysP-Ii-Vt3"/>
+                        <outlet property="phoneTextField" destination="75t-2h-5PK" id="hzW-SO-tgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84.732824427480907" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backMark" width="30" height="30"/>
+        <namedColor name="buttonColor">
+            <color red="0.15294117647058825" green="0.61176470588235299" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textFiledBgColor">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
